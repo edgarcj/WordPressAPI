@@ -1,0 +1,50 @@
+{
+        "name":"Blog MalVestida",
+        "short_name":"Blog MV",
+        "description":"Pagina Malvestida traida desde wordpress por medio de la API ",
+        "background_color":"#32CCFF",
+        "theme_color":"#00BFFF",
+        "orientation":"portrait",
+        "display":"standalone",
+        "start_url":"./?utm_source=web_app_manifest",
+        "scope":"./",
+        "lang":"es-MX",
+        "icons":[
+                {
+                        "src":"./images/blogging_24.png",
+                        "sizes":"24X24",
+                        "type":"image/png"
+                },
+                {
+                        "src":"./images/blogging_32.png",
+                        "sizes":"32X32",
+                        "type":"image/png"
+                },
+                {
+                        "src":"./images/blogging_64.png",
+                        "sizes":"64X64",
+                        "type":"image/png"
+                },
+                {
+                        "src":"./images/blogging_128.png",
+                        "sizes":"128X128",
+                        "type":"image/png"
+                },
+                {
+                        "src":"./images/blogging_256.png",
+                        "sizes":"256X256",
+                        "type":"image/png"
+                },
+                {
+                        "src":"./images/blogging.png",
+                        "sizes":"512X512",
+                        "type":"image/png"
+                }
+                ,
+                {
+                        "src":"./images/ball-triangle.svg",
+                        "sizes":"128x128",
+                        "type":"image/svg+xml"
+                }
+        ]
+}
