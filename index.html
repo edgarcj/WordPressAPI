@@ -6,6 +6,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>WordPress REST API</title>
+        <meta name="description" content="Pagina Malvestida traida desde wordpress por medio de la API ">
+        <meta name="theme-color" content="#32CCFF">
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="shortcut icon" type="image/png" href="./images/blogging_24.png">
+        <link rel="apple-touch-icon" href="./images/blogging_64.png">
+        <link rel="apple-touch-startup-image" href="./images/blogging_128.png">
+        <link rel="manifest" href="./manifest.json">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
         <style>
@@ -104,7 +114,7 @@
         <h1>WordPress REST API</h1>
         <article id="site" class="site"></article>
         <section id="posts" class="posts"></section>
-        <img class="loader" src="../assets/ball-triangle.svg" alt="Cargando...">
+        <img class="loader" src="./images/ball-triangle.svg" alt="Cargando...">
         <template id="post-template">
                 <article class="post">
                         <img class="post-image">
@@ -229,6 +239,13 @@
                                 getPosts();
                         }
                 });
+                
+                
+                if ("serviceWorker" in navigator) {
+                        navigator.serviceWorker.register("./sw.js")
+                                .then(reg => console.log("Registro exitoso", reg))
+                                .catch(err => console.warn("Error en el registro", err))
+                }
         </script>
 </body>
 
